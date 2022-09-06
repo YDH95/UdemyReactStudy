@@ -1,5 +1,5 @@
 //import ExpenseItem from "./components/ExpenseItem";
-import ExpenseList from "./components/ExpenseList";
+import ExpenseList from "./components/Expenses/ExpenseList";
 
 function App() {
   const expense = [
