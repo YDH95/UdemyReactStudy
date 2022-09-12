@@ -2,7 +2,7 @@ import React, {useState} from "react";
 
 import './ExpenseForm.css';
 
-function ExpenseForm() {
+function ExpenseForm(props) {
     // useState 사용 방법들
     // 방법 1
     const [enteredTitle, setEnteredTitle] = useState('');
@@ -54,13 +54,13 @@ function ExpenseForm() {
             title: enteredTitle,
             amount: enteredAmount,
             date: new Date(enteredDate)
-        }
-
-        console.log(expenseData);
+        };
+        
+        props.onSaveExpenseData(expenseData);
         setEnteredTitle('');
         setEnteredAmount('');
         setEnteredDate('');
-    }
+    };
 
     return (
         <form onSubmit={submitHandler}>
@@ -82,7 +82,7 @@ function ExpenseForm() {
                 <button  type="submit">Add Expense</button>
             </div>
         </form>
-    )
-}
+    );
+};
 
 export default ExpenseForm;
