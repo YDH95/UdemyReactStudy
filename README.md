@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# React Hook 함수
+
+useState() => 값을 변경할때는 useState()를 거쳐서 해야됨<br>
+useEffect() => 컴포넌트가 랜더링 될때마다 실행되야하는게 있으면 useEffect 괄호안에 코드를 입력하면됨<br>
+useRef() => useRef() 함수가 실행 될때는 컴포넌트가 리렌더링 되지않고 useRef current로 지정한값만 바뀜
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +72,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
